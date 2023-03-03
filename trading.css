@@ -1,0 +1,934 @@
+/* TICKER SECTION */
+.hwrap {
+    overflow: hidden; 
+    background: navy;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    position: static;
+    font-size: 25px;
+    max-height: 40px;
+    box-shadow: 2px 2px 2px black;
+    }
+  .hitem {
+    flex-shrink: 0;
+   box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: 10px;
+    }
+     
+  /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+  /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+  @keyframes tickerh {
+    0% { transform: translate3d(100%, 0, 0); }
+    100% { transform: translate3d(-400%, 0, 0); }
+  }
+  .hmove { animation: tickerh linear 180s infinite; }
+  .hmove:hover { animation-play-state: paused;
+  color:black; }
+    /*END TICKER SECTION*/
+    /*COMPANY LOGO SECTION*/
+ .company h2{
+  letter-spacing:4px;
+  color: navy;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+@media all and (max-width:500px){
+  .first-company .company h2{
+     font-size: 10px;
+  }
+}
+
+/*COMPANY LOGO SECTION END*/
+/*SGX TABLES*/
+
+.sgx .sgxlive1{
+  justify-content: center;
+  background-color: navy;
+  font-size: 17px;
+  border-style: solid;
+  border-width: small;
+  border-color: whitesmoke;
+}
+.sgx .sgxlive1 caption{
+  color: navy;
+  font-size: 25px;
+  font-weight: 700;
+}
+.sgx .sgxlive1 th{
+  padding: 10px 0px 10px 10px;
+        color: #fff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+}
+.sgxlive1 td{
+  padding: 8px 0px 8px 10px;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sgx .sgxlive2{
+  justify-content: center;
+  background-color: navy;
+  font-size: 17px;
+  border-style: solid;
+  border-width: small;
+  border-color: whitesmoke;
+}
+.sgx .sgxlive2 caption{
+  color: navy;
+  font-size: 25px;
+  font-weight: 700;
+}
+.sgx .sgxlive2 th{
+       padding: 10px 0px 10px 10px;
+        color: #fff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+.sgxlive2 td{
+    padding: 8px 0px 8px 10px;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sgx .sgxlive3{
+  justify-content: center;
+  background-color: navy;
+  font-size: 17px;
+  border-style: solid;
+  border-width: small;
+  border-color: whitesmoke;
+}
+.sgx .sgxlive3 caption{
+  color: navy;
+  font-size: 25px;
+  font-weight: 700;
+}
+.sgx .sgxlive3 th{
+  padding: 8px 0px 8px 10px;
+        color: #fff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+}
+.sgxlive3 td{
+  padding: 8px 0px 8px 10px;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ 
+/*SGX TABLES END*/
+    /*DATE AND TIME SECTION*/
+.disjunct{
+    font-family: sans-serif;
+    color: navy;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    box-sizing: border-box;
+    font-size: 20px;
+    
+  }
+  .display-date {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .display-time {
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid ;
+    border-radius: 5px;
+    transition: ease-in-out 0.1s;
+    transition-property: background, box-shadow, color;
+    -webkit-box-reflect: below 2px
+      linear-gradient(transparent, rgba(255, 255, 255, 0.05));
+      box-shadow: black;
+  }
+  @media all and (max-width:500px){
+    .disjunct{
+      height: 4vh;
+      font-size: 10px;
+      
+    }
+    .display-date {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    
+    .display-time {
+      display: flex;
+      font-size: 20px;
+      font-weight: bold;
+      border: 2px solid ;
+      border-radius: 5px;
+      transition: ease-in-out 0.1s;
+      transition-property: background, box-shadow, color;
+      -webkit-box-reflect: below 2px
+        linear-gradient(transparent, rgba(255, 255, 255, 0.05));
+        box-shadow: black;
+    }
+  }
+  
+  /*DATE AND TIME SECTION END*/
+  /*SEARCH BAR SECTION*/
+.search {
+    display: flex;
+  }
+  .searchTerm {
+    border: 3px solid navy;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+  } 
+  .searchButton {
+    background: navy;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  @media all and (max-width:400px){
+    .search {
+      display: flex;
+    }
+    .searchTerm {
+      border: 3px solid navy;
+      border-right: none;
+      padding: 5px;
+      height: 26px;
+      margin-left: -24%;
+      border-radius: 3px 0 0 3px;
+      outline: none;
+      width:120px;
+    } 
+    .searchButton {
+      background: navy;
+      text-align: center;
+      color: whitesmoke;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 10px;
+    }
+  }
+  /*SEARCH BAR SECTION END*/
+  /*LIVE TEXT SECTION*/
+  .live_text{
+    color: navy;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /*LIVE TEXT SECTION END*/
+  /*FOUR TABLES SECTION*/
+.flat-table {
+  border-collapse:collapse;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  border: none;
+  border-radius: 3px;
+  border: 1px solid white;
+}
+.flat-table th, .flat-table td {
+  box-shadow: inset 0 -1px rgba(0,0,0,0.25), 
+    inset 0 1px rgba(0,0,0,0.25);
+}
+.flat-table th {
+  font-weight: normal;
+  padding: 0.2em;
+  color: white;
+  text-shadow: 0 0 1px rgba(0,0,0,0.1);
+  font-size: 20px;
+  background: navy;
+  font-weight: 600;
+}
+.flat-table td {
+  color: white;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  background: linear-gradient(to right,blue,black);
+}
+.flat-table tr {
+  -webkit-transition: background 0.3s, box-shadow 0.3s;
+  -moz-transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+/*FOUR TABLES SECTION END*/
+/*MARKET ACTIONS START*/
+.market-heading{
+  color: navy;
+}
+.market-buttons{
+  border-radius: 4px;
+  margin: 7px;
+  width: 240px;
+  box-shadow: 3px 3px 3px blue;
+  }
+  .market-text{
+        color:white;
+        font-weight: 600;
+  font-size: 20px;
+        
+  }
+  .market-table td , th{
+ font-weight: 700;
+ color: navy;
+ font-size: 20px;
+  }
+/*MARKET ACTIONS END*/
+/*GLOBAL MARKETS SECTION START*/
+.global_market h1{
+color: navy;
+}
+.fourinone h3{
+color: navy;
+}
+.global{
+  border: 2px solid navy;
+box-shadow: 3px 3px 3px navy;
+background-color: whitesmoke;
+color:navy;
+font-weight: 600;
+font-size: 20px;
+}
+/*GLOBAL MARKETS SECTION END*/
+  /*COMMENT SECTION START*/
+ .comm h1{
+ color: navy;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 40px;
+}
+#comments .p {
+ margin-left:5em;
+ margin-bottom:0.5em;
+ margin-top:0.5em;
+ clear:both;
+ color:black;
+ font-weight: 600;
+}
+.nombre{
+  border-color: 2px solid navy;
+  box-shadow: 4px 4px 4px navy;
+}
+.textarea{
+  border-color: 2px solid navy;
+  box-shadow: 4px 4px 4px navy;
+}
+ .pnom 
+{
+ margin-left:4.2em;
+ margin-top:0.5em;
+}
+ .hr {
+ color:black;
+ width:100%;
+ margin:auto;
+ border:1px solid black;
+}
+ .eliminar{
+ display:inline-block;
+ margin-left:5em;
+ margin-bottom:1em;
+ border-radius: 4px;
+  border-radius: 4px;
+  width: 80px;
+  color: white;
+  background-color: navy;
+  box-shadow: 3px 3px 3px navy;
+  font-weight: 600;
+  font-size: 20px;
+  }
+
+
+ .edit {
+ width:4em;
+ height:2em;
+ display:inline-block;
+ margin-left:1em;
+ margin-bottom:1em;
+ border-radius: 4px;
+ width: 80px;
+  color: white;
+  background-color: navy;
+  box-shadow: 3px 3px 3px navy;
+  font-weight: 600;
+  font-size: 20px;
+}
+ .botone {
+ width:4em;
+ height:2em;
+ display:inline-block;
+ margin-left:1em;
+ margin-bottom:1em;
+ border-radius: 4px;
+ width: 80px;
+color: white;
+background-color: navy;
+box-shadow: 3px 3px 3px navy;
+font-weight: 600;
+font-size: 18px;
+}
+.boton{
+  border-radius: 4px;
+  margin: 7px;
+  width: 80px;
+  color: white;
+  background-color: navy;
+  box-shadow: 3px 3px 3px navy;
+  font-weight: 600;
+  font-size: 20px;
+  }
+
+
+/*COMMENT SECTION END*/
+  /*NEWS SECTION START*/
+ #news .carousel {
+    margin-bottom: 40px;
+   }
+   #news .carousel-cell .menu_card {
+    width: 100rem;
+    height: 200px;
+    margin-right: 10px;
+    background: white;
+    border-radius: 5px; 
+    margin-bottom: 7px;
+  }
+  #news .menu_btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
+      background: navy;
+      padding: 5px 5px;
+      margin-left: 100px;
+      margin-right: 100px;
+      transition: 0.3s;
+      border-radius: 4px;
+  }
+  
+  #news .carousel-cell:before {
+    display: block;
+    text-align: center;
+    
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+  #news .carousel{
+    box-sizing: border-box;
+    }
+    
+    #news .carouselbox {
+      font-family: helvetica,sans-serif;
+      font-size: 14px;
+      width: 200px;
+      position: relative;
+      margin: 1em;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 10px #ccc;
+      overflow: hidden;
+      margin: auto;
+    
+    }
+    #news  .carousel-cell .menu_card{
+      width: 325px;
+      height: 450px;
+      padding-top: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  #news .menu_card .menu_image{
+      width: 305px;
+      height: 245px;
+      margin: 0 auto;
+      overflow: hidden;
+  }
+  
+  #news .menu_card .menu_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  #news .menu_card .menu_image:hover img{
+      transform: scale(1.1);
+  }
+  
+  #news .menu_card .small_card{
+      width: 45px;
+      height: 35px;
+      float: right;
+      position: relative;
+      top: -240px;
+      right: -8px;
+      opacity: 0;
+      border-radius: 4px;
+      transition: 0.3s;
+  }
+  #news .menu_card:hover .small_card{
+      position: relative;
+      top: -240px;
+      right: 20px;
+      opacity: 1;
+  }
+  
+  #news .menu_card .small_card i{
+      font-size: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 50px;
+      color: #000;
+      cursor: pointer;
+      text-shadow: 0 0 6px #000;
+      transition: 0.2s;
+  }
+  
+  #news .menu_card .small_card i:hover{
+      color: red;
+  }
+  #news .menu_card .menu_info p{
+      text-align: justify;
+      margin-top: 8px;
+       padding-left: 25px ;
+      padding-right: 20px;
+    }
+  .heading h1{
+    color:navy;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-style: bold;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  #news .content {
+    margin: 0;
+    padding: 0;
+  }
+  #news .content li {
+    font-size: 12px;
+    margin: 10px ;
+    padding: 10px ;
+    width: 100rem;
+    list-style: none;
+    text-align: left;
+    
+  }
+  #news .active {
+    height: 250px; 
+  }
+  #news .active li {
+    position: absolute;
+    top: 300px;
+    opacity: 0;
+    transition: opacity 2s, top 1s;
+  }
+  #news .active li.current {
+    top: 30px;
+    opacity: 1;
+    transition: opacity 2s;
+  }
+  #news .active .buttons {
+    padding: 5px 0;
+    background: #eee;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+  }
+  #news .carouselbox button {
+    border: none;
+    display: none;
+  }
+  #news .active button {
+    display: inline;
+  }
+  #news .testitred {
+    color:red;
+  }
+  #news .testit20 {
+    font-size: 20px;
+  }
+  #news .offscreen {
+    position: absolute;
+    left: -2000px;
+  }
+  /*NEWS SECTION END*/
+  
+  /*RESPONSIVE OF NEWS SECTION START*/
+  /*RESPONSIVE*/
+  @media all and (max-width:500px){
+    #news .carouselbox {
+      font-family: helvetica,sans-serif;
+      font-size: 9px;
+      width: 100px;
+      position: relative;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 10px #ccc;
+      overflow: hidden;
+    
+    }
+    #news .content {
+      margin: 0;
+      padding: 0;
+    }
+    #news .content li {
+      font-size: 3px;
+      margin: 5px ;
+      padding: 5px ;
+      width: 60%;
+      list-style: none;
+      text-align: left;
+      
+    }
+    #news .active {
+      height: 150px; 
+    }
+    #news .active li {
+      position: absolute;
+      top: 150px;
+      opacity: 0;
+      transition: opacity 2s, top 1s;
+    }
+    #news .active li.current {
+      top: 30px;
+      opacity: 1;
+      transition: opacity 2s, ;
+    }
+    #news .active .buttons {
+      padding: 5px 0;
+      background: #eee;
+      text-align: center;
+      z-index: 10;
+      position: relative;
+    }
+    #news .carouselbox button {
+      border: none;
+      display: none;
+    }
+    #news .active button {
+      display: inline;
+    }
+    #news .testitred {
+      color:red;
+    }
+    #news .testit20 {
+      font-size: 5px;
+    }
+    #news .offscreen {
+      position: absolute;
+      left: -1000px;
+    }
+    #news .carousel {
+      box-sizing: border-box;
+      height: 50%;
+      width: 100%;
+    }
+    
+    #news .carousel-cell .menu_card {
+      width: 40%;
+      height: 130px;
+      background: white;
+      border-radius: 5px; 
+    }
+    #news .menu_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        background: navy;
+        padding: 2px 2px 2px 2px;
+        margin: 0px 60px;
+        border-radius: 4px;
+    
+    }
+    
+    /* cell number */
+    #news .carousel-cell:before {
+      display: block;
+      text-align: center;
+      line-height: 200px;
+      font-size: 30px;
+      color: white;
+    }
+    #news .carousel-cell .menu_card{
+        width: 225px;
+        height: 280px;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    
+    #news .menu_card .menu_image{
+        width: 210px;
+        height: 145px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    #news .menu_card .menu_image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: 0.3s;
+    }
+    #news .menu_card .menu_image:hover img{
+        transform: scale(1.1);
+    }
+    
+    #news .menu_card .small_card{
+        width: 20px;
+        height: 20px;
+        float: right;
+        position: relative;
+        top: -140px;
+        right: -3px;
+        opacity: 0;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    #news .menu_card:hover .small_card{
+        position: relative;
+        top: -140px;
+        right: 10px;
+        opacity: 1;
+    }
+    
+    #news .menu_card .small_card i{
+        font-size: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 50px;
+        color: #000;
+        cursor: pointer;
+        text-shadow: 0 0 6px #000;
+        transition: 0.2s;
+    }
+    #news .menu_card .menu_info p{
+      text-align: center;
+      margin-top: 4px;
+       padding-left: 10pxpx ;
+      padding-right: 20px;
+    }
+  }
+  /*RESPONSIVE OF NEWS SECTION END*/
+
+  /*LOGOS OF BROKERS STRAT*/
+
+  .companny_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 18px;
+ 
+ }
+ .companny_block .companyal h2{
+ text-transform: capitalize;
+ letter-spacing:4px;
+ color: white;
+ padding: 10px;
+ font-size: 15px;
+ text-align: center;
+ font-family: cursive;
+ border-radius: 8px;
+ margin: 10px;
+ box-sizing: border-box;
+ border:  1px solid #00CED1; 
+ background: navy;
+ box-shadow: 5px 5px 5px blue;
+ }
+ .companny_block .companyz h2{
+ text-transform: capitalize;
+ letter-spacing:4px;
+ color: white;
+ padding: 10px;
+ font-size: 15px;
+ text-align: center;
+ font-family: cursive;
+ border-radius: 8px;
+ margin: 10px;
+ box-sizing: border-box;
+ border:  1px solid #00CED1; 
+ background: navy;
+ box-shadow: 5px 5px 5px blue;
+ }
+ .companny_block .companyao h2{
+ text-transform: capitalize;
+ letter-spacing:4px;
+ color: white;
+ padding: 10px;
+ font-size: 15px;
+ text-align: center;
+ font-family: cursive;
+ border-radius: 8px;
+ margin: 10px;
+ box-sizing: border-box;
+ border:  1px solid #00CED1; 
+ background: navy;
+ box-shadow: 5px 5px 5px blue;
+ }
+ .companny_block .companye h2{
+ text-transform: capitalize;
+ letter-spacing:4px;
+ color: white;
+ padding: 10px;
+ font-size: 15px;
+ text-align: center;
+ font-family: cursive;
+ border-radius: 8px;
+ margin: 10px;
+ box-sizing: border-box;
+ border:  1px solid #00CED1; 
+ background: navy;
+ box-shadow: 5px 5px 5px blue;
+ }
+ .companny_block .companyu h2{
+ text-transform: capitalize;
+ letter-spacing:4px;
+ color: white;
+ padding: 10px;
+ font-size: 15px;
+ text-align: center;
+ font-family: cursive;
+ border-radius: 8px;
+ margin: 10px;
+ box-sizing: border-box;
+ border:  1px solid #00CED1; 
+ background: navy;
+ box-shadow: 5px 5px 5px blue;
+ }
+ .companny_block .companyal img{
+ margin-right: 5px;
+ border: 1px;
+ width: 45px;
+ }
+ .companny_block .companyz img{
+ margin-right: 5px;
+ border: 1px;
+ width: 33px;
+ }
+ .companny_block .companyao img{
+ margin-right: 5px;
+ border: 1px;
+ width: 30px;
+ 
+ }
+ .companny_block .companye img{
+ margin-right: 5px;
+ border: 1px;
+ width: 40px;
+ 
+ }
+ .companny_block .companyu img{
+ margin-right: 5px;
+ border: 1px;
+ width: 33px;
+ 
+ }
+ /*LOGOS OF BROKERS END*/
+ /*FOOTER*/
+.foot{
+  background: linear-gradient(to right,blue,black);
+  border-radius: 5px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 3px 3px 3px 3px rgba(2,2,2,0.1);
+  border: 3px solid white;
+  align-items: cover;
+}
+.foot p{
+  text-align: justify;
+}
+.sub-foot3 li{
+padding-top: 16px;
+}
+.sub-foot2 li{
+  padding-top: 16px;
+  }
+.tlhandel i{
+font-size: 30px;
+padding-left: 40px;
+padding-right: 40px;
+}
+ .thandel i{
+font-size: 30px;
+}
+ .lhandel i{
+font-size: 30px;
+}
+.texta{
+border-radius: 4px;
+width: 290px;
+color: navy;
+}
+
+.phn{
+border-radius: 4px;
+width: 290px;
+color: navy;
+}
+.send{
+border-radius: 4px;
+margin: 7px;
+width: 80px;
+color: white;
+background-color: navy;
+box-shadow: 3px 3px 3px navy;
+font-weight: 600;
+font-size: 20px;
+}
+
+ .ename{
+border-radius: 4px;
+width: 290px;
+color: navy;
+}
+ .linu{
+border-radius: 4px;
+width: 290px;
+color: navy;
+}
+
+@media all and (max-width:400px){
+  .end p{
+    font-size:15px;
+  }
+}
+
+/*FOOTER END*/
+ /*SCROLLBAR*/   
+ ::-webkit-scrollbar{
+  width: 13px;
+}
+
+::-webkit-scrollbar-track{
+  border-radius: 15px;
+  box-shadow: inset 0 0 5px purple(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(to right,blue,white);
+  border-radius: 15px;
+}
+
+/*SCROLLBAR*/ 
+
+
+
+  

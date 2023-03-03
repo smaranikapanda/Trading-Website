@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGX NIFTY</title>
+
+    <link rel="stylesheet" href="trading.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--logo-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png/favicon-16x16.png">
+    <link rel="manifest" href="favicon.png/site.webmanifest">
+ </head>
+
+ <body>
+
+    <!--TICKER SECTION-->
+    <div class="hwrap">
+        <div class="hmove">
+            <div class="hitem">nulla consequuntur vero, perspiciatis explicabo qui impedit assumenda voluptatibus fugit
+                amet aspernatur voluptatem! Inventore quae nobis quisquam, nam rerum quas iusto esse architecto! Dolorem
+                voluptates ducimus excepturi culpa id fugit ab? Cumque, dolor eveniet Lorem ipsum, dolor sit amet
+                consectetur</div>
+
+        </div>
+    </div>
+    <!--COMPANY LOGO SECTION-->
+     <section>
+         <div class="container company d-flex flex-row bd-highlight mb-3 mt-3 ms-5 bd-lowlight" id="first-company">
+        <div class="trading p-2 bd-highlight"><img src="trade_image/tradel.jpeg" width="60px" height="auto" class="ms-2 img-fluid"></div>
+        <h2 class=" fw-bolder p-2 bd-highlight display-5 mb-1">SGX NIFTY</h2>
+    
+    <!--SEARCH BAR SECTION-->
+    <div class=" d-flex flex-row bd-lowlight mt-3 ms-auto">    
+    <div class="wrap">
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="Search Stock">
+            <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>      
+        </div>
+    </div>
+   </div> 
+   </div>
+  </section>
+
+
+    <!--SGX TABLES-->
+    <section>
+        <div class="container mt-6">
+    <div class="row sgx">
+        <table class="col-md-4 sgxlive1  caption-top">
+            <caption class="fw-bolder">NIFTY 50</caption>
+            <thead>
+                <th>Last Trade</th>
+                <th>Change</th>
+                <th>Change In %</th>
+            </thead>
+            <tr>
+                <td>18,706.5</td>
+                <td>+52.0</td>
+                <td>+0.28%</td>
+            </tr>
+            <tr>
+                <td>High</td>
+                <td>Low</td>
+                <td>Open</td>
+            </tr>
+            <tr>
+                <td>18,712.5</td>
+                <td>18,557.0</td>
+                <td>18,695.0</td>
+
+            </tr>
+        </table>
+        <table class="col-md-4 sgxlive2  caption-top">
+            <caption class="fw-bolder">SGX NIFTY</caption>
+            <thead>
+                <th>Last Trade</th>
+                <th>Change</th>
+                <th>Change In %</th>
+            </thead>
+            <tr>
+                <td>18,706.5</td>
+                <td>+52.0</td>
+                <td>+0.28%</td>
+            </tr>
+            <tr> 
+                <td>High</td>
+                <td>Low</td>
+                <td>Open</td>
+            </tr>
+            <tr>
+                <td>18,712.5</td>
+                <td>18,557.0</td>
+                <td>18,695.0</td>
+
+            </tr>
+        </table>
+        <table class="col-md-4 sgxlive3  caption-top">
+            <caption class="fw-bolder">NIFTY BANKS</caption>
+            <thead>
+                <th>Last Trade</th>
+                <th>Change</th>
+                <th>Change In %</th>
+            </thead>
+            <tr>
+                <td>18,706.5</td>
+                <td>+52.0</td>
+                <td>+0.28%</td>
+            </tr>
+            <tr>
+                <td>High</td>
+                <td>Low</td>
+                <td>Open</td>
+            </tr>
+            <tr>
+                <td>18,712.5</td>
+                <td>18,557.0</td>
+                <td>18,695.0</td>
+
+            </tr>
+        </table>
+     </div>
+    </div>
+   </section>
+    <!--SGX TABLE SECTION END-->
+    <!--DATE AND TIME SECTION-->
+    <section>
+        <div class="container mt-4 mb-4">
+    <div class="disjunct text-center fw-bolder">
+        <div class="display-date">
+            <span id="day">day</span>,
+            <span id="daynum">00</span>
+            <span id="month">month</span>
+            <span id="year">0000</span>
+        </div>
+        <div class="display-time"></div>
+    </div>
+ </div>
+ </section>
+    <!--DATE AND TIME SECTION-->
+
+    <!--LIVE PHOTO SECTION-->
+    <section>
+        <div class="container">
+    <div class="live_text text-center fw-bolder mb-3">
+        <h1>SGX NIFTY Intraday Live Chart</h1>
+    </div>
+    <div class="live_photo text-center"><img src="trade_image/sgx.jpg" max-width="100%" height="auto" class="img-fluid"></div>
+        </div>
+        </section>
+    <!--LIVE PHOTO SECTION END-->
+
+    <!--FOUR TABLES SECTION-->
+    <section>
+    <div class="container all_tables mt-4">
+        <div class="row">
+        <table class="col-md-3 flat-table flat-table-1">
+            <thead>
+                <th>Indices</th>
+                <th>Last</th>
+                <th>Chg</th>
+                <th>Chg%</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DOW 30</td>
+                    <td>34,347.00</td>
+                    <td>152.97</td>
+                    <td>0.45%</td>
+                </tr>
+                <tr>
+                    <td>S&P 500</td>
+                    <td>4,026.12</td>
+                    <td>-1.14</td>
+                    <td>-0.03%</td>
+                </tr>
+                <tr>
+                    <td>NASDAQ COMPO</td>
+                    <td>11,226.40</td>
+                    <td>-58.96</td>
+                    <td>-58.96</td>
+                </tr>
+                <tr>
+                    <td>FTSE 100</td>
+                    <td>7,486.67</td>
+                    <td>20.07</td>
+                    <td>0.27%</td>
+                </tr>
+                <tr>
+                    <td>DAX</td>
+                    <td>14,541.40</td>
+                    <td>1.82</td>
+                    <td>0.01%</td>
+                </tr>
+                <tr>
+                    <td>NIKKEI 225</td>
+                    <td>28,135.80</td>
+                    <td>-147.22</td>
+                    <td>-0.52%</td>
+                </tr>
+                <tr>
+                    <td>SHANGHAI COM</td>
+                    <td>3,069.66</td>
+                    <td>-32.03</td>
+                    <td>-1.03%</td>
+                </tr>
+                <tr>
+                    <td>NSE NIFTY</td>
+                    <td>18,541.20</td>
+                    <td>28.45</td>
+                    <td>0.15%</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="col-md-3 flat-table flat-table-2">
+            <thead>
+                <th>Futures</th>
+                <th>Last</th>
+                <th>Chg</th>
+                <th>Chg%</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DOW 30</td>
+                    <td>34,347.00</td>
+                    <td>152.97</td>
+                    <td>0.45%</td>
+                </tr>
+                <tr>
+                    <td>S&P 500</td>
+                    <td>4,026.12</td>
+                    <td>-1.14</td>
+                    <td>-0.03%</td>
+                </tr>
+                <tr>
+                    <td>NASDAQ COMPO</td>
+                    <td>11,226.40</td>
+                    <td>-58.96</td>
+                    <td>-58.96</td>
+                </tr>
+                <tr>
+                    <td>FTSE 100</td>
+                    <td>7,486.67</td>
+                    <td>20.07</td>
+                    <td>0.27%</td>
+                </tr>
+                <tr>
+                    <td>DAX</td>
+                    <td>14,541.40</td>
+                    <td>1.82</td>
+                    <td>0.01%</td>
+                </tr>
+                <tr>
+                    <td>NIKKEI 225</td>
+                    <td>28,135.80</td>
+                    <td>-147.22</td>
+                    <td>-0.52%</td>
+                </tr>
+                <tr>
+                    <td>SHANGHAI COM</td>
+                    <td>3,069.66</td>
+                    <td>-32.03</td>
+                    <td>-1.03%</td>
+                </tr>
+                <tr>
+                    <td>NSE NIFTY</td>
+                    <td>18,541.20</td>
+                    <td>28.45</td>
+                    <td>0.15%</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="col-md-3 flat-table flat-table-3">
+            <thead>
+                <th>Comodities</th>
+                <th>Last</th>
+                <th>Chg</th>
+                <th>Chg%</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DOW 30</td>
+                    <td>34,347.00</td>
+                    <td>152.97</td>
+                    <td>0.45%</td>
+                </tr>
+                <tr>
+                    <td>S&P 500</td>
+                    <td>4,026.12</td>
+                    <td>-1.14</td>
+                    <td>-0.03%</td>
+                </tr>
+                <tr>
+                    <td>NASDAQ COMPO</td>
+                    <td>11,226.40</td>
+                    <td>-58.96</td>
+                    <td>-58.96</td>
+                </tr>
+                <tr>
+                    <td>FTSE 100</td>
+                    <td>7,486.67</td>
+                    <td>20.07</td>
+                    <td>0.27%</td>
+                </tr>
+                <tr>
+                    <td>DAX</td>
+                    <td>14,541.40</td>
+                    <td>1.82</td>
+                    <td>0.01%</td>
+                </tr>
+                <tr>
+                    <td>NIKKEI 225</td>
+                    <td>28,135.80</td>
+                    <td>-147.22</td>
+                    <td>-0.52%</td>
+                </tr>
+                <tr>
+                    <td>SHANGHAI COM</td>
+                    <td>3,069.66</td>
+                    <td>-32.03</td>
+                    <td>-1.03%</td>
+                </tr>
+                <tr>
+                    <td>NSE NIFTY</td>
+                    <td>18,541.20</td>
+                    <td>28.45</td>
+                    <td>0.15%</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="col-md-3 flat-table flat-table-4">
+            <thead>
+                <th>Currencies</th>
+                <th>Last</th>
+                <th>Chg</th>
+                <th>Chg%</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DOW 30</td>
+                    <td>34,347.00</td>
+                    <td>152.97</td>
+                    <td>0.45%</td>
+                </tr>
+                <tr>
+                    <td>S&P 500</td>
+                    <td>4,026.12</td>
+                    <td>-1.14</td>
+                    <td>-0.03%</td>
+                </tr>
+                <tr>
+                    <td>NASDAQ COMPO</td>
+                    <td>11,226.40</td>
+                    <td>-58.96</td>
+                    <td>-58.96</td>
+                </tr>
+                <tr>
+                    <td>FTSE 100</td>
+                    <td>7,486.67</td>
+                    <td>20.07</td>
+                    <td>0.27%</td>
+                </tr>
+                <tr>
+                    <td>DAX</td>
+                    <td>14,541.40</td>
+                    <td>1.82</td>
+                    <td>0.01%</td>
+                </tr>
+                <tr>
+                    <td>NIKKEI 225</td>
+                    <td>28,135.80</td>
+                    <td>-147.22</td>
+                    <td>-0.52%</td>
+                </tr>
+                <tr>
+                    <td>SHANGHAI COM</td>
+                    <td>3,069.66</td>
+                    <td>-32.03</td>
+                    <td>-1.03%</td>
+                </tr>
+                <tr>
+                    <td>NSE NIFTY</td>
+                    <td>18,541.20</td>
+                    <td>28.45</td>
+                    <td>0.15%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+</section>
+    <!--FOUR TABLES SECTION END-->
+     <!--MARKET ACTIONS START-->
+     <section>
+        <h1 class="text-center fw-bolder market-heading">Market Action</h1>
+        <div class="container text-center">
+            <button class="btn market-buttons bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                <div class="market-text text-light">Top gainers</div>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample1">
+            <table class="table table-primary table-striped market-table">
+                <thead>
+                    <tr>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Current Price</th>
+                    <th scope="col">Today L/H</th>
+                    <th scope="col">Change(%)</th>
+                    <th scope="col">Prev. Close</th>
+                    <th scope="col">Volume</th>
+                   </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">S&P 500</td>
+                        <td>4,026.12</td>
+                        <td>-1.14</td>
+                        <td>-0.03%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NASDAQ COMPO</td>
+                        <td>11,226.40</td>
+                        <td>-58.96</td>
+                        <td>-58.96</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">FTSE 100</td>
+                        <td>7,486.67</td>
+                        <td>20.07</td>
+                        <td>0.27%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DAX</td>
+                        <td>14,541.40</td>
+                        <td>1.82</td>
+                        <td>0.01%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NIKKEI 225</td>
+                        <td>28,135.80</td>
+                        <td>-147.22</td>
+                        <td>-0.52%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">SHANGHAI COM</td>
+                        <td>3,069.66</td>
+                        <td>-32.03</td>
+                        <td>-1.03%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NSE NIFTY</td>
+                        <td>18,541.20</td>
+                        <td>28.45</td>
+                        <td>0.15%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="container text-center">
+            <button class="btn market-buttons bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+               <div class="market-text text-light">Top loosers</div>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample2">
+            <table class="table table-primary table-striped market-table">
+                <thead>
+                    <tr>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Current Price</th>
+                    <th scope="col">Today L/H</th>
+                    <th scope="col">Change(%)</th>
+                    <th scope="col">Prev. Close</th>
+                    <th scope="col">Volume</th>
+                   </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">S&P 500</td>
+                        <td>4,026.12</td>
+                        <td>-1.14</td>
+                        <td>-0.03%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NASDAQ COMPO</td>
+                        <td>11,226.40</td>
+                        <td>-58.96</td>
+                        <td>-58.96</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">FTSE 100</td>
+                        <td>7,486.67</td>
+                        <td>20.07</td>
+                        <td>0.27%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DAX</td>
+                        <td>14,541.40</td>
+                        <td>1.82</td>
+                        <td>0.01%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NIKKEI 225</td>
+                        <td>28,135.80</td>
+                        <td>-147.22</td>
+                        <td>-0.52%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">SHANGHAI COM</td>
+                        <td>3,069.66</td>
+                        <td>-32.03</td>
+                        <td>-1.03%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NSE NIFTY</td>
+                        <td>18,541.20</td>
+                        <td>28.45</td>
+                        <td>0.15%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="container text-center">
+            <button class="btn market-buttons bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                <div class="market-text text-light">52 week low</div>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample3">
+            <table class="table table-primary table-striped market-table">
+                <thead>
+                    <tr>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Current Price</th>
+                    <th scope="col">Today L/H</th>
+                    <th scope="col">Change(%)</th>
+                    <th scope="col">Prev. Close</th>
+                    <th scope="col">Volume</th>
+                   </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">S&P 500</td>
+                        <td>4,026.12</td>
+                        <td>-1.14</td>
+                        <td>-0.03%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NASDAQ COMPO</td>
+                        <td>11,226.40</td>
+                        <td>-58.96</td>
+                        <td>-58.96</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">FTSE 100</td>
+                        <td>7,486.67</td>
+                        <td>20.07</td>
+                        <td>0.27%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DAX</td>
+                        <td>14,541.40</td>
+                        <td>1.82</td>
+                        <td>0.01%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NIKKEI 225</td>
+                        <td>28,135.80</td>
+                        <td>-147.22</td>
+                        <td>-0.52%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">SHANGHAI COM</td>
+                        <td>3,069.66</td>
+                        <td>-32.03</td>
+                        <td>-1.03%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NSE NIFTY</td>
+                        <td>18,541.20</td>
+                        <td>28.45</td>
+                        <td>0.15%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="container text-center">
+            <button class="btn market-buttons bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                <div class="market-text text-light">52 week high</div>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample4">
+            <table class="table table-primary table-striped market-table">
+                <thead>
+                    <tr>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Current Price</th>
+                    <th scope="col">Today L/H</th>
+                    <th scope="col">Change(%)</th>
+                    <th scope="col">Prev. Close</th>
+                    <th scope="col">Volume</th>
+                   </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">S&P 500</td>
+                        <td>4,026.12</td>
+                        <td>-1.14</td>
+                        <td>-0.03%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NASDAQ COMPO</td>
+                        <td>11,226.40</td>
+                        <td>-58.96</td>
+                        <td>-58.96</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">FTSE 100</td>
+                        <td>7,486.67</td>
+                        <td>20.07</td>
+                        <td>0.27%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DAX</td>
+                        <td>14,541.40</td>
+                        <td>1.82</td>
+                        <td>0.01%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NIKKEI 225</td>
+                        <td>28,135.80</td>
+                        <td>-147.22</td>
+                        <td>-0.52%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">SHANGHAI COM</td>
+                        <td>3,069.66</td>
+                        <td>-32.03</td>
+                        <td>-1.03%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NSE NIFTY</td>
+                        <td>18,541.20</td>
+                        <td>28.45</td>
+                        <td>0.15%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="container text-center">
+            <button class="btn market-buttons bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                <div class="market-text text-light">Top Stocks by Volume</div>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample5">
+            <table class="table table-primary table-striped market-table">
+                <thead>
+                    <tr>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Current Price</th>
+                    <th scope="col">Today L/H</th>
+                    <th scope="col">Change(%)</th>
+                    <th scope="col">Prev. Close</th>
+                    <th scope="col">Volume</th>
+                   </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">S&P 500</td>
+                        <td>4,026.12</td>
+                        <td>-1.14</td>
+                        <td>-0.03%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NASDAQ COMPO</td>
+                        <td>11,226.40</td>
+                        <td>-58.96</td>
+                        <td>-58.96</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">FTSE 100</td>
+                        <td>7,486.67</td>
+                        <td>20.07</td>
+                        <td>0.27%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DAX</td>
+                        <td>14,541.40</td>
+                        <td>1.82</td>
+                        <td>0.01%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NIKKEI 225</td>
+                        <td>28,135.80</td>
+                        <td>-147.22</td>
+                        <td>-0.52%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">SHANGHAI COM</td>
+                        <td>3,069.66</td>
+                        <td>-32.03</td>
+                        <td>-1.03%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">NSE NIFTY</td>
+                        <td>18,541.20</td>
+                        <td>28.45</td>
+                        <td>0.15%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DOW 30</td>
+                        <td>34,347.00</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                        <td>152.97</td>
+                        <td>0.45%</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+        
+     </section>
+      <!--MARKET ACTIONS END-->
+    
+        <!--GLOBAL MARKETS-->
+        <div class="company_block container-fluid  global_market">
+            <div class=" row ">
+                <h1 class="text-center fw-bolder">Global Markets</h1>
+            
+            
+
+            <div class="col-md-4 fourinone">
+                <h3 class="text-center fw-bolder">Asian</h3>
+
+                <div class="card border global mb-3">
+                    <div class="title text-center fw-bolder ">S&P</div>
+                    <div class="cpyr text-center fw-bolder">3964.44</div>
+                </div>
+                <div class="card border global mb-3">
+                    <div class="title text-center fw-bolder">S&P</div>
+                    <div class="cpyr text-center fw-bolder">3964.44</div>
+                </div>
+
+                <div class="card border global mb-3">
+                    <div class="title text-center fw-bolder">S&P</div>
+                    <div class="cpyr text-center fw-bolder">3964.44</div>
+                </div>
+                <div class="card border global mb-3">
+                    <div class="title text-center fw-bolder">S&P</div>
+                    <div class="cpyr text-center fw-bolder">3964.44</div>
+                </div>
+
+            </div>
+            
+            <div class="col-md-4 fourinone">
+             <h3 class="text-center fw-bolder">Europian</h3>
+                <div class="card border global mb-3">
+                    <div class="title text-center fw-bolder">S&P</div>
+                    <div class="cpyr text-center fw-bolder">3964.44</div>
+                </div>
+                <div class="card border global mb-3">
+                    <div class="title text-center fw-bolder">S&P</div>
+                    <div class="cpyr text-center fw-bolder">3964.44</div>
+                </div>
+                <div class="card border global mb-3">
+                    <div class="title text-center fw-bolder">S&P</div>
+                    <div class="cpyr text-center fw-bolder">3964.44</div>
+                </div>
+                <div class="card border global mb-3">
+                    <div class="title text-center fw-bolder">S&P</div>
+                    <div class="cpyr text-center fw-bolder">3964.44</div>
+                </div>
+
+            </div>
+            <div class="col-md-4 fourinone">
+              <h3 class="text-center fw-bolder">American</h3>
+                <div class="card border global mb-3">
+                    <div class="title text-center fw-bolder">S&P</div>
+                    <div class="cpyr text-center fw-bolder">3964.44</div>
+                </div>
+                <div class="card border global mb-3">
+                    <div class="title text-center fw-bolder">S&P</div>
+                    <div class="cpyr text-center fw-bolder">3964.44</div>
+                </div>
+                <div class="card border global mb-3">
+                    <div class="title text-center fw-bolder">S&P</div>
+                    <div class="cpyr text-center fw-bolder">3964.44</div>
+                </div>
+                <div class="card border global mb-3">
+                    <div class="title text-center fw-bolder">S&P</div>
+                    <div class="cpyr text-center fw-bolder">3964.44</div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+ </div>
+    <!--GLOBAL MARKETS END-->
+    <!--COMMENT SECTION-->
+    <div class="comm mb-6">
+        <h1 class="text-center fw-bolder">Comments</h1>
+    </div>
+    <div id="comments input-group mb-3">
+        <div id="comentarios" class="comentarios input-group-prepend ">
+            <label for="email"></label><input type="email" id="nombre" class="nombre form-control" placeholder="your name"
+              required />
+            <div id="nuevo" class="nuevo input-group-prepend mt-3">
+                <textarea id="textarea" class="textarea form-control" placeholder="add your comment here"
+                    required></textarea autofocus>
+                <button id="boton" class="boton float-end mt-2 mb-4">Post</button>
+            </div>
+        </div>
+    </div>
+<!--COMMENT SECTION END-->
+
+
+       
+     <!----NEWS SECTION-->
+     <div class="heading text-center  mt-4"><h1 class="fw-bolder"><bold>News</h1></bold></div>
+   <section id="news">
+     <div class="container-fluid carousel" data-flickity='{ "autoPlay": true }'>
+        <div class="carousel-cell">
+          <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="./trade_image/sgx-image.jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+               
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <a href="#" class="menu_btn">Read More</a>
+            </div>
+          </div> 
+        </div>
+        <div class="carousel-cell">
+          <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="./trade_image/sgx-image.jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <a href="#" class="menu_btn">Read More</a>
+            </div>
+          </div> 
+        </div>
+        <div class="carousel-cell">
+          <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="./trade_image/sgx-image.jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <a href="#" class="menu_btn">Read More</a>
+            </div>
+          </div> 
+        </div>
+        <div class="carousel-cell">
+          <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="./trade_image/sgx-image.jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+               
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <a href="#" class="menu_btn">Read More</a>
+            </div>
+          </div> 
+        </div>
+        <div class="carousel-cell">
+          <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="./trade_image/sgx-image.jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+               
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <a href="#" class="menu_btn">Read More</a>
+            </div>
+          </div> 
+        </div>
+        <div class="carousel-cell">
+          <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="./trade_image/sgx-image.jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <a href="#" class="menu_btn">Read More</a>
+            </div>
+          </div> 
+        </div>
+        <div class="carousel-cell">
+          <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="./trade_image/sgx-image.jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <a href="#" class="menu_btn">Read More</a>
+            </div>
+
+        </div> 
+        </div>
+        <div class="carousel-cell">
+          <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="./trade_image/sgx-image.jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <a href="#" class="menu_btn">Read More</a>
+            </div>
+
+         </div> 
+        </div>
+        <div class="carousel-cell">
+          <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="./trade_image/sgx-image.jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                </p>
+                <a href="#" class="menu_btn">Read More</a>
+            </div>
+
+        </div> 
+        </div>
+        <div class="carousel-cell">
+          <div class="menu_card">
+
+            <div class="menu_image">
+                <img src="./trade_image/sgx-image.jpeg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+               
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                    
+                </p>
+                <a href="#" class="menu_btn">Read More</a>
+            </div>
+
+        </div> 
+        </div>
+      </div>
+    </section>
+      <!--NEWS SECTION END-->
+      <!--LOGOS OF BROKERS STRAT-->
+      <div class="companny_block">
+      <div class="companyz">
+        <h2><img src="trade_image/zerodha.png">Zerodha</h2>
+            </div>
+      <div class="companyal"><h2><img src="trade_image/Alice Blue.png">Alice Blue</h2></div>
+      <div class="companyao"> <h2><img src="trade_image/Angel One.png">Angel One</h2></div>
+      <div class="companye"><h2><img src="trade_image/edelwises.jpg">Edelwises</h2></div>
+        <div class="companyu"><h2><img src="trade_image/Upstocks.png">Upstocks</h2></div>
+      </div>
+    </div>
+    <!--LOGOS OF BROKERS END-->
+     <!--FOOTER--> 
+    <section>
+            <footer class="">
+                <div class="container-fluid  foot">
+                  <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                      <div>
+                        <h1 class="text-white">SGX NIFTY</h1>
+                        <p class="mb-20 footer-desc text-white">SGX NIFTY Futures is a great tool for traders to use in order to make informed decisions about their trading strategies.
+                            It gives traders a head start on what our trading day could look like. The SGX NIFTY is a futures contract on the NSE Nifty.</p>
+                        </div>
+                        <a href="https://www.twitter.com" targrt="_blank" class="thandel text-white"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.telegram.com" targrt="_blank" class="tlhandel text-white"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.linkedin.com" targrt="_blank" class="lhandel text-white"><i class="fa-brands fa-linkedin-in"></i></a>  
+                      
+                    </div>
+                    <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+                      <div class="sub-foot2">
+                        <h4 class="text-white h3">Top 5 Brokers</h4>
+                        <ul class="list-unstyled">
+                          <li>
+                            <a href="#"  target="_blank" class="text-decoration-none text-white h4">Edelweises</a>
+                          </li>
+                          <li>
+                            <a href="#"  target="_blank" class="text-decoration-none text-white h4">Angel One</a>
+                          </li>
+                          <li>
+                            <a href="#"  target="_blank" class="text-decoration-none text-white h4">Alice Blue</a>
+                          </li>
+                          <li>
+                            <a href="#"  target="_blank" class="text-decoration-none text-white h4">Upstox</a>
+                          </li>
+                          <li>
+                            <a href="#"  target="_blank" class="text-decoration-none text-white h4">Zerodha</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 sub-foot3">
+                      <div>
+                        <h4 class="text-white h3">Quick Links</h4>
+                        <ul class="list-unstyled">
+                          <li>
+                            <a  target="_blank" href="trading_about.html" class="text-decoration-none text-white h4">About Us</a>
+                          </li>
+                          <li>
+                            <a  target="_blank" href="trading_news.html"  class="h4 text-decoration-none text-white">News</a>
+                          </li>
+                          <li>
+                            <a   target="_blank" href="trading_TermsandCondition.html" class="h4 text-decoration-none text-white">Terms & Condition</a>
+                          </li>
+                          <li>
+                            <a  target="_blank" href="trading_PrivacyPolicy.html" class="h4 text-decoration-none text-white">Privacy Policy</a>
+                          </li>
+                          <li>
+                            <a  target="_blank" href="trading_disclaimer.html" class="h4 text-decoration-none text-white">Disclaimers</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                      <div>
+                        <h4 class="text-white h3 text-center">Contact Details</h4>
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                            <input type="hidden" name="access_key" value="5c8719a9-7f6d-4dd8-8dae-c1df96d555a5"/>
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                  
+                            
+                              <label for="name" class=""></label>
+                              <input type="text" name="name" id="name" placeholder="your name" required class="float-end linu mt-2 bg-light" />
+                            
+                            
+                              <label for="email" class=""></label>
+                              <input type="email" name="email" id="email" placeholder="Your email Id" required class="float-end ename mt-2  bg-light" />
+                            
+                            
+                              <label for="phone" class=""></label>
+                              <input type="text" name="phone" id="phone" placeholder="phone number" required class="float-end phn mt-2  bg-light" />
+                            
+                            
+                              <label for="message" class=""></label>
+                  
+                              <textarea rows="4" name="message" id="message" placeholder="write your query"  class="float-end texta mt-2  bg-light" required></textarea>
+                         
+                          
+                                 <button type="submit" class="send float-end">Send</button>
+                        </form>    
+                        
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <div class="copyright text-white end">
+                      <p>Copyright<i class="fas fa-copyright"></i>2018,SGX NIFTY.All rights reserved,Desgined by <a href="https://www.linkedin.com/in/smaranika-panda-069a7a23b" target="_blank" class="text-white">Smaranika Panda</a></p>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+    </section>
+     <!--FOOTER-->
+     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="trading.js"> </script>
+ </body>
+
+</html>
